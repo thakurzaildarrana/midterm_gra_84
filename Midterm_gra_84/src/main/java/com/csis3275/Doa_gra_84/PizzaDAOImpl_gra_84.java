@@ -34,8 +34,8 @@ public class PizzaDAOImpl_gra_84 {
 	}
 	
 	public boolean createStudent(Pizza_gra_84 newPizza) {
-		return jdbcTemplate.update(SQL_CREATE_Pizza, newPizza.getId(), newPizza.getSize(),newPizza.getFirstname()
-				,newPizza.getLastname(),newPizza.getDiscount(),newPizza.getNumberOfToppings()) > 0;
+		return jdbcTemplate.update(SQL_CREATE_Pizza, newPizza.getId(), newPizza.getSize(),newPizza.getFirstName()
+				,newPizza.getLastName(),newPizza.getDiscount(),newPizza.getNumberOfToppings()) > 0;
 	}
 	
 	

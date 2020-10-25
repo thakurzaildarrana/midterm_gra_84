@@ -24,7 +24,7 @@ public class PizzaController {
  PizzaDAOImpl_gra_84 PizzaDaoImpl;
 
 
- @ModelAttribute("Pizza")
+ @ModelAttribute("pizzas")
  public Pizza_gra_84 setupAddForm() {
  return new Pizza_gra_84();
  }
@@ -33,30 +33,35 @@ public class PizzaController {
  @GetMapping("/showOrders")
  public String showStudents(HttpSession session, Model model) {
 
- List<Pizza_gra_84> Pizza = PizzaDaoImpl.getAllOrders();
- model.addAttribute("Pizza", Pizza);
- return "Pizza";
+ List<Pizza_gra_84> pizza = PizzaDaoImpl.getAllOrders();
+ model.addAttribute("pizza", pizza);
+ return "pizza";
  }
 
  @PostMapping("/createPizza")
- public String createStudent(@ModelAttribute("Pizza") Pizza_gra_84
+ public String createStudent(@ModelAttribute("pizzas") Pizza_gra_84
 createPizza, Model model) {
  PizzaDaoImpl.createStudent(createPizza);
 
- List<Pizza_gra_84> Pizza = PizzaDaoImpl.getAllOrders();
- model.addAttribute("Pizza", Pizza);
- return "Pizza";
+
+ List<Pizza_gra_84> pizza = PizzaDaoImpl.getAllOrders();
+ model.addAttribute("pizza", pizza);
+ return "pizza";
  }
 
- @ModelAttribute("typePizza")
-	public List<String> initializeplate() {
-		List<String> pizzaSize = new ArrayList<String>();
-		pizzaSize.add("Large");
-		pizzaSize.add("Medium");
-		pizzaSize.add("Small");
-		pizzaSize.add("Personal");
-		return pizzaSize;
+ 
+ 
+ @ModelAttribute("sizes")
+	public List<String> size(){
+		List<String> sizes = new ArrayList<String>();
+		sizes.add("Personal");
+		sizes.add("Small");
+		sizes.add("Medium");
+		sizes.add("Large");
+	
+		return sizes;
 	}
+
 		
 	
 		

@@ -1,0 +1,29 @@
+1.In your own words explain what role agility and architecture play in your group project.
+Agility and arcitecture played a good aount of role in our project. Agility means rapid and adaptive response to change
+Effective communication among others.
+Our aim was to deliver the working model as fast as possible. This defines the agile process. We planned the features and functionality of our project.
+Then we made a simple design. After thatnwe hard coded the project.
+We built the architecture of the project. It is basically the structure of the system. The framework consisted of how everything was conected, the functions and relationships.
+It basically served as a blueprint.
+
+
+2. What is an NFR, why do businesses not like them? Explain your answer, give specific examples.
+a non-functional requirement (NFR) is a specification that describes the system’s operation capabilities and constraints that enhance its functionality.
+It is the definition of system functions like security, reliability, performance, maintainence, scalability, and usability.
+They act as limitations or restrictions on the design of the system over different backlogs. 
+
+Project teams operate under a number of assumptions, and this is often the main cause of missed non-functional requirements. 
+Business analysts think: “We’ve done this a hundred times, so everybody knows…” To assume that the development teams understand important non-functional constraints
+leads to  lack of explicit definition and failure to deliver them.
+
+Business analysts often lack experience in technical aspects of software development function of NFR, for example security.
+They don't understand the concept so they don't have any clue about the right questions to ask. They might not know how to interpret and document the information they collect.
+This lack of knowledge further complicates the concept of NFR.
+
+
+3.In your own opinion is your team for your group project "Agile" Why or why not? Explain your answer,give specific examples.
+According to me our team is Agile.
+We respond to the problems and act quickly on it.
+We divided the task into short phases and worked on the small parts to make it one whole
+Whatever changes we threw in the project, the whole team responded with a positive outcome
+Every member was able to throw in some suggestions which worked great for the project as all of us adapted to the new change.
